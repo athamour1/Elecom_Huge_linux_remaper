@@ -1,0 +1,11 @@
+[Unit]
+Description=Elecom Huge Trackball Mouse Button Remap
+After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/elecom_huge_remap.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical.target
